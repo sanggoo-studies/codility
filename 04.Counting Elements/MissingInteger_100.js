@@ -4,9 +4,9 @@
 function solution(A) {
 	// write your code in JavaScript (Node.js 4.0.0)
 
-	var arr = [];
+	let arr = [];
 
-	for(var i = 0; i < A.length; i++) {
+	for(let i = 0; i < A.length; i++) {
 		if(A[i] > 0) {
 			arr[A[i]] = true;
 		}
@@ -16,7 +16,7 @@ function solution(A) {
 		return 1;
 	}
 
-	for(i = 1; i<arr.length; i++) {
+	for(let i = 1; i<arr.length; i++) {
 		if(typeof arr[i] === 'undefined') {
 			return i;
 		}
@@ -30,5 +30,4 @@ console.log(solution([7,3,6,4,5,2,1]));
 console.log(solution([0]));
 console.log(solution([-1, -4]));
 
-//https://codility.com/demo/results/training7C4ABZ-R58/
-//https://codility.com/demo/results/trainingWV9CB6-6NM/
+// https://app.codility.com/demo/results/trainingR7XC5T-2WW/ - 100%

@@ -1,6 +1,7 @@
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
 
+
 def solution(N):
     binary = bin(N)[2:]
     maxgap = 0

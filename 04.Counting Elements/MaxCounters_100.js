@@ -3,16 +3,16 @@
 
 function solution(N, A) {
 	// write your code in JavaScript (Node.js 4.0.0)
-	var max = 0;
-	var setMax = 0;
-	var arr = [];
-	var len = A.length;
+	let max = 0;
+	let setMax = 0;
+	let arr = [];
+	let len = A.length;
 
-	for(var i=0; i<N; i++) {
+	for(let i=0; i<N; i++) {
 		arr[i] = 0;
 	}
 
-	for(i=0; i<len; i++) {
+	for(let i=0; i<len; i++) {
 		if(A[i] > 0 && A[i] <= N) {
 			if(++arr[(A[i]-1)] > max) {
 				max = arr[(A[i]-1)];
@@ -20,9 +20,9 @@ function solution(N, A) {
 			continue;
 		}
 
-		if(A[i] == N+1 && setMax != max) {
+		if(A[i] === N+1 && setMax !== max) {
 			setMax = max;
-			for(var j=0; j<N; j++) {
+			for(let j=0; j<N; j++) {
 				arr[j] = max;
 			}
 		}
@@ -33,6 +33,4 @@ function solution(N, A) {
 
 console.log(solution(5, [3,4,4,6,1,4,4]));
 
-//https://codility.com/demo/results/training2KPE9Q-M2J/
-//https://codility.com/demo/results/trainingJX9SJ9-WQE/
-//https://codility.com/demo/results/trainingC6VSJD-FKB/
+// https://app.codility.com/demo/results/training4FB3RK-ES8/ - 100%

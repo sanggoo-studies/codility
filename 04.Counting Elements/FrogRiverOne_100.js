@@ -4,15 +4,15 @@
 function solution(X, A) {
 	// write your code in JavaScript (Node.js 4.0.0)
 
-	var arr = {};
-	var count = 0;
+	let arr = {};
+	let count = 0;
 
-	for(var i=0; i<A.length; i++) {
+	for(let i=0; i<A.length; i++) {
 		if(typeof arr[A[i]] === 'undefined') {
 			arr[A[i]] = 1;
 			count++;
 		}
-		if(count == X)
+		if(count === X)
 			return i;
 	}
 
@@ -22,5 +22,4 @@ function solution(X, A) {
 console.log(solution(5, [1,3,1,4,2,3,5,4]));
 console.log(solution(2, [2,2,2,2]));
 
-//https://codility.com/demo/results/training9SMXUB-3S3/
-//https://codility.com/demo/results/training3RTXR6-3TW/
+// https://app.codility.com/demo/results/trainingV99EQQ-G6F/ - 100%

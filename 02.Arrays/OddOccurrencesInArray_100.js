@@ -2,9 +2,9 @@
 // console.log('this is a debug message');
 
 function solution(A) {
-	var times = {};
+	let times = {};
 
-	for(var i = 0; i < A.length; i++) {
+	for(let i = 0; i < A.length; i++) {
 		if(typeof times[A[i]] === 'undefined') {
 			times[A[i]] = 1;
 		} else {
@@ -12,12 +12,12 @@ function solution(A) {
 		}
 	}
 
-	for(var x in times) {
-		if(times[x] % 2 != 0)
+	for(let x in times) {
+		if(times[x] % 2 !== 0)
 			return parseInt(x);
 	}
 }
 
 console.log(solution([9,3,9,3,9,7,9]));
 
-//https://codility.com/demo/results/trainingEXH9MY-NDN/
+// https://app.codility.com/demo/results/trainingS8BPR6-3KJ/ - 100%

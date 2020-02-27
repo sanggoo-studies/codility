@@ -3,17 +3,17 @@
 
 function solution(A) {
 	// write your code in JavaScript (Node.js 4.0.0)
-	var min;
-	var minIndex;
-	var sum;
-	var len = A.length;
-	var count;
-	var avg;
+	let min;
+	let minIndex;
+	let sum;
+	let len = A.length;
+	let count;
+	let avg;
 
-	for(var i = 1; i < len; i++) {
+	for(let i = 1; i < len; i++) {
 		sum = A[i];
 		count = 1;
-		for(var j=i-1; j >= 0 && i-j < 3; j--) {
+		for(let j=i-1; j >= 0 && i-j < 3; j--) {
 			sum += A[j];
 			count++;
 			avg = sum/count;
@@ -30,5 +30,4 @@ function solution(A) {
 console.log(solution([-10, -10, -5, -10, -20]));
 console.log(solution([-10,-1,-1,-1,-100]));
 
-//https://codility.com/demo/results/trainingGEAZWA-XP8/
-//https://codility.com/demo/results/training6DCZGT-EAN/
+// https://app.codility.com/demo/results/trainingS78S8U-PTM/ - 100%

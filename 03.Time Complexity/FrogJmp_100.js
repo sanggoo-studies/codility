@@ -8,4 +8,4 @@ function solution(X, Y, D) {
 
 console.log(solution(10, 85, 30));
 
-//https://codility.com/demo/results/trainingXNA9HV-4MX/
+// https://app.codility.com/demo/results/trainingHN4B9W-R4N/ - 100%
